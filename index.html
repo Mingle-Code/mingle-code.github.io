@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingle - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Mingle</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#showcase" class="nav-link">Work</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-badge">Available for work</div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Creative</span>
+                        <span class="title-line highlight">Developer</span>
+                        <span class="title-line">& Designer</span>
+                    </h1>
+                    <p class="hero-description">
+                        I craft digital experiences that blend creativity with functionality. 
+                        Specializing in modern web technologies and innovative solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#showcase" class="btn-primary">
+                            <span>View Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn-secondary">
+                            <span>About Me</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="terminal-title">~/projects/portfolio</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command">npm run dev</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output">✓ Server running on localhost:3000</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output">✓ Hot reload enabled</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command typing">git commit -m "amazing features"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="large-text">
+                            I'm a passionate developer who loves creating digital experiences 
+                            that make a difference. With expertise in modern web technologies, 
+                            I bring ideas to life through clean code and innovative design.
+                        </p>
+                        <p>
+                            My journey in development started with curiosity and evolved into 
+                            a passion for building scalable, user-friendly applications. 
+                            I believe in the power of technology to solve real-world problems.
+                        </p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Coffee Cups</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="95"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="75"></div>
+                                </div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-level">
+                                    <div class="skill-fill" data-level="70"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Interactive Showcase</h2>
+                </div>
+                
+                <div class="showcase-grid">
+                    <div class="demo-card" data-demo="css">
+                        <div class="demo-preview">
+                            <div class="css-animation">
+                                <div class="morphing-shape"></div>
+                                <div class="floating-particles">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-info">
+                            <div class="demo-tech">CSS3</div>
+                            <h3>Advanced Animations</h3>
+                            <p>Smooth morphing shapes with particle effects</p>
+                            <button class="demo-trigger">
+                                <span>Run Animation</span>
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-card" data-demo="js">
+                        <div class="demo-preview">
+                            <div class="interactive-calculator">
+                                <div class="calc-display">
+                                    <span class="calc-result">0</span>
+                                </div>
+                                <div class="calc-buttons">
+                                    <button class="calc-btn operator">C</button>
+                                    <button class="calc-btn operator">±</button>
+                                    <button class="calc-btn operator">%</button>
+                                    <button class="calc-btn operator">÷</button>
+                                    <button class="calc-btn number">7</button>
+                                    <button class="calc-btn number">8</button>
+                                    <button class="calc-btn number">9</button>
+                                    <button class="calc-btn operator">×</button>
+                                    <button class="calc-btn number">4</button>
+                                    <button class="calc-btn number">5</button>
+                                    <button class="calc-btn number">6</button>
+                                    <button class="calc-btn operator">-</button>
+                                    <button class="calc-btn number">1</button>
+                                    <button class="calc-btn number">2</button>
+                                    <button class="calc-btn number">3</button>
+                                    <button class="calc-btn operator">+</button>
+                                    <button class="calc-btn number zero">0</button>
+                                    <button class="calc-btn number">.</button>
+                                    <button class="calc-btn equals">=</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-info">
+                            <div class="demo-tech">JavaScript</div>
+                            <h3>Interactive Calculator</h3>
+                            <p>Fully functional calculator with smooth animations</p>
+                            <button class="demo-trigger">
+                                <span>Try Calculator</span>
+                                <i class="fas fa-calculator"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-card" data-demo="php">
+                        <div class="demo-preview">
+                            <div class="form-simulator">
+                                <div class="form-container">
+                                    <div class="form-field">
+                                        <input type="text" placeholder="Enter your name" id="demo-name">
+                                        <label>Full Name</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="email" placeholder="Enter your email" id="demo-email">
+                                        <label>Email Address</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <textarea placeholder="Your message" id="demo-message" rows="2"></textarea>
+                                        <label>Message</label>
+                                    </div>
+                                    <button class="form-submit">
+                                        <span>Send Message</span>
+                                        <div class="loading-spinner"></div>
+                                    </button>
+                                </div>
+                                <div class="form-response">
+                                    <div class="response-icon">✓</div>
+                                    <h4>Message Sent!</h4>
+                                    <p>Your message has been processed successfully.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-info">
+                            <div class="demo-tech">PHP</div>
+                            <h3>Form Processing</h3>
+                            <p>Server-side validation and response simulation</p>
+                            <button class="demo-trigger">
+                                <span>Test Form</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="demo-card" data-demo="cpp">
+                        <div class="demo-preview">
+                            <div class="algorithm-visualizer">
+                                <div class="algo-header">
+                                    <span>Bubble Sort</span>
+                                    <div class="algo-controls">
+                                        <button class="algo-btn" id="sort-btn">Sort</button>
+                                        <button class="algo-btn" id="reset-btn">Reset</button>
+                                    </div>
+                                </div>
+                                <div class="sorting-bars">
+                                    <div class="bar" data-value="8"></div>
+                                    <div class="bar" data-value="3"></div>
+                                    <div class="bar" data-value="12"></div>
+                                    <div class="bar" data-value="6"></div>
+                                    <div class="bar" data-value="15"></div>
+                                    <div class="bar" data-value="1"></div>
+                                    <div class="bar" data-value="9"></div>
+                                    <div class="bar" data-value="4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-info">
+                            <div class="demo-tech">C++</div>
+                            <h3>Algorithm Visualization</h3>
+                            <p>Real-time sorting algorithm demonstration</p>
+                            <button class="demo-trigger">
+                                <span>Run Algorithm</span>
+                                <i class="fas fa-code"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Mingle</h3>
+                    <p>Crafting digital experiences with passion and precision</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#showcase">Work</a>
+                    </div>
+                    <p>&copy; 2025 Mingle. Built with HTML, CSS & JavaScript</p>
+                </div>
+            </div>
+            <div class="footer-wave">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
